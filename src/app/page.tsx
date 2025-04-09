@@ -47,7 +47,11 @@ export default function Home() {
     setLoading(true);
     setError(null);
     try {
-      const apiKey = 'd3956aa31e6b4e0b63a746ff01020ad9';
+      const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
+      if (!apiKey) {
+        throw new Error('OpenWeatherMap API key is not configured');
+      }
+      
       const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(cityName)}&appid=${apiKey}&units=metric`;
       const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${encodeURIComponent(cityName)}&appid=${apiKey}&units=metric`;
       
