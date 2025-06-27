@@ -2,7 +2,8 @@
 
 A modern, responsive weather dashboard built with Next.js that provides real-time weather information and 5-day forecasts for cities worldwide.
 
-![Weather Dashboard Screenshot](public/weather-dashboard-screenshot.png)
+![Screenshot 2025-04-09 023936](https://github.com/user-attachments/assets/8f559410-a6a2-4d2d-9557-5f691d4a63d1)
+
 
 ## Features
 
